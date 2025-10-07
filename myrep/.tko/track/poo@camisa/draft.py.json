@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_16-59-31",
+            "content": "@@ -128,12 +128,41 @@\n  != \n+(\n %22PP%22\n+, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22)\n :%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_17-01-33",
+            "content": "@@ -63,16 +63,17 @@\n :str = %22\n+ \n %22%0A%0A    d\n@@ -128,41 +128,12 @@\n  != \n-(\n %22PP%22\n-, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22)\n :%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_17-03-32",
+            "content": "@@ -127,94 +127,41 @@\n  != \n+(\n %22PP%22\n- or valor != %22P%22 or valor != %22M%22 or valor != %22G%22 or valor != %22GG%22 or valor !=\n+, %22P%22, %22M%22, %22G%22, %22GG%22,\n  %22XG%22\n+)\n :%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_17-07-00",
+            "content": "@@ -120,17 +120,17 @@\n f valor \n-=\n+!\n = %22PP%22 o\n@@ -242,64 +242,17 @@\n nho \n-bom%22)%0A        else:%0A            print('tamanho \n inv\n-a\n+%C3%A1\n lido\n-'\n+%22\n )%0A%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_17-11-24",
+            "content": "@@ -116,25 +116,25 @@\n    if valor \n-!\n+=\n = %22PP%22 or va\n@@ -227,20 +227,28 @@\n     \n-return False\n+print(%22Tamanho bom%22)\n %0A   \n@@ -274,19 +274,33 @@\n     \n-return True\n+print('tamanho invalido')\n %0A%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_17-13-33",
+            "content": "@@ -25,24 +25,25 @@\n _init__(self\n+,\n ):%0A        s\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_17-16-08",
+            "content": "@@ -253,43 +253,8 @@\n se:%0A\n-            self.__tamanho = valor%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_17-18-35",
+            "content": "@@ -226,33 +226,20 @@\n     \n-print(%22tamanho invalido%22)\n+return False\n %0A   \n@@ -284,16 +284,39 @@\n = valor%0A\n+            return True\n %0A%0A    de\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_17-21-07",
+            "content": "@@ -115,25 +115,25 @@\n    if valor \n-=\n+!\n = %22PP%22 or va\n@@ -136,17 +136,17 @@\n r valor \n-=\n+!\n = %22P%22 or\n@@ -152,17 +152,17 @@\n r valor \n-=\n+!\n = %22M%22 or\n@@ -164,25 +164,25 @@\n M%22 or valor \n-=\n+!\n = %22G%22 or val\n@@ -184,17 +184,17 @@\n r valor \n-=\n+!\n = %22GG%22 o\n@@ -201,17 +201,17 @@\n r valor \n-=\n+!\n = %22XG%22:%0A\n@@ -226,23 +226,23 @@\n     \n-self.__\n+print(%22\n tamanho \n   = \n@@ -241,17 +241,18 @@\n nho \n-  = valor\n+invalido%22)\n %0A   \n@@ -270,39 +270,39 @@\n             \n-print(%22\n+self.__\n tamanho \n invalido%22)%0A%0A\n@@ -289,26 +289,23 @@\n tamanho \n-invalido%22)\n+= valor\n %0A%0A%0A    d\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-07_17-23-48",
+            "content": "class Camisa:\n\n    def __init__(self):\n        self.__tamanho:str = \"\"\n\n    def setTamanho(self, valor:str):\n        if valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\":\n            self.__tamanho   = valor\n        else:\n            print(\"tamanho invalido\")\n\n\n    def getTamanho(self):\n        return self.__tamanho\n        \ncamisa = Camisa()\n\nwhile camisa.getTamanho() == \"\":\n    print(\"digite seu tamanho de roupa\")\n    tamanho = input()\n    camisa.setTamanho(tamanho)\nprint(\"parabens, voce comprou uma camisa temanho\", camisa.getTamanho())\n        ",
+            "lines": "23"
+        }
+    ]
+}

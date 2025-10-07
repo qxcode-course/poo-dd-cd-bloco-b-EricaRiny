@@ -9,3 +9,23 @@
 2025-10-07 16:41:40, SELF, v:1, k:poo@chinela, rate:100, human:sim_pedi_ajuda_da_luiza, alone:8, study:30
 2025-10-07 16:41:50, MOVE, v:1, k:poo@camisa, mode:DOWN
 2025-10-07 16:42:06, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 16:59:31, EXEC, v:1, k:poo@camisa, mode:FREE, size:20
+2025-10-07 17:01:32, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:01:33, EXEC, v:1, k:poo@camisa, mode:FREE, size:20
+2025-10-07 17:03:29, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:03:32, EXEC, v:1, k:poo@camisa, mode:FREE, size:20
+2025-10-07 17:06:58, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:07:00, EXEC, v:1, k:poo@camisa, mode:FREE, size:20
+2025-10-07 17:11:23, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:11:24, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:22
+2025-10-07 17:11:25, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-07 17:13:31, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:13:33, EXEC, v:1, k:poo@camisa, mode:FREE, size:22
+2025-10-07 17:16:07, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:16:08, EXEC, v:1, k:poo@camisa, mode:FREE, size:22
+2025-10-07 17:18:31, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:18:35, EXEC, v:1, k:poo@camisa, mode:FREE, size:23
+2025-10-07 17:21:05, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:21:07, EXEC, v:1, k:poo@camisa, mode:FREE, size:23
+2025-10-07 17:23:43, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 17:23:48, EXEC, v:1, k:poo@camisa, mode:FREE, size:23
