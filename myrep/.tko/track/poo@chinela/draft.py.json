@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_15-37-57",
+            "content": "@@ -16,151 +16,4 @@\n     \n-%0A    def __init__(self):%0A       self.__tamanho:int = 0%0A    %0A    def setTamanho(self, valor:int):%0A        if valor %3C 20 or valor %3E 50:%0A            %0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-07_15-48-19",
+            "content": "@@ -70,65 +70,8 @@\n  = 0\n-%0A%0A    def getTamanho(self):%0A        return self.__tamanho\n %0A   \n@@ -162,333 +162,5 @@\n     \n-print(%22tamanho errado%22)%0A        elif valor %25 2 != 0:%0A            print(%22tamanho errado%22)%0A        else:%0A            self.__tamanho = valor%0A%0Achinela = Chinela()%0A%0Awhile chinela.getTamanho() == 0:%0A    tamanho = int(input())%0A    chinela.setTamanho(tamanho)%0A%0Aprint(%22Parabens, voce comprou uma chinela tamanho%22, chinela.getTamanho())%0A%0A\n %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-07_16-13-58",
+            "content": "class Chinela:\n    \n    def __init__(self):\n       self.__tamanho:int = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, valor:int):\n        if valor < 20 or valor > 50:\n            print(\"tamanho errado\")\n        elif valor % 2 != 0:\n            print(\"tamanho errado\")\n        else:\n            self.__tamanho = valor\n\nchinela = Chinela()\n\nwhile chinela.getTamanho() == 0:\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint(\"Parabens, voce comprou uma chinela tamanho\", chinela.getTamanho())\n\n\n",
+            "lines": "25"
+        }
+    ]
+}
