@@ -14,3 +14,34 @@
 2025-10-20 08:50:31, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:35
 2025-10-20 08:51:09, MOVE, v:1, k:poo@roupa, mode:BACK
 2025-10-20 08:51:45, SELF, v:1, k:poo@roupa, rate:100, alone:10, study:30
+2025-10-20 09:00:55, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-20 09:01:01, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 09:01:11, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:1
+2025-10-20 09:34:26, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:32
+2025-10-20 09:36:31, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:33
+2025-10-20 09:37:57, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:33
+2025-10-20 09:38:28, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:33
+2025-10-20 09:38:59, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:33
+2025-10-20 09:51:53, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:58
+2025-10-20 09:55:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-20 09:56:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-20 09:58:05, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-20 09:59:08, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:58
+2025-10-20 10:03:31, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:60
+2025-10-20 10:07:16, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:59
+2025-10-20 10:40:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:76
+2025-10-20 10:40:48, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 10:40:51, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61
+2025-10-20 10:44:17, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:76
+2025-10-20 10:45:22, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:76
+2025-10-20 10:55:48, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:83
+2025-10-20 10:56:41, EXEC, v:1, k:poo@relogio, mode:FULL, rate:53, size:84
+2025-10-20 10:56:56, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:83
+2025-10-20 14:31:09, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 14:31:11, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:82
+2025-10-20 14:45:02, EXEC, v:1, k:poo@relogio, mode:FULL, rate:92, size:91
+2025-10-20 14:45:36, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:91
+2025-10-20 15:05:22, SELF, v:1, k:poo@relogio, iagen:pesquisei_como_deixar_2_digitos, alone:9, study:120
+2025-10-20 15:05:25, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-20 15:05:27, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:91
+2025-10-20 15:05:29, MOVE, v:1, k:poo@relogio, mode:BACK
