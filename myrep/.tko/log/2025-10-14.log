@@ -1,0 +1,5 @@
+2025-10-14 14:05:27, SELF, v:1, k:poo@camisa, rate:100, human:vitin, alone:7, study:40
+2025-10-14 14:05:31, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-14 14:05:33, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-14 14:06:13, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-14 14:06:15, EXEC, v:1, k:poo@camisa, mode:FREE
