@@ -1,0 +1,299 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_10-13-37",
+            "content": "@@ -1,613 +0,0 @@\n-class Grafite:%0A    def __init__(self, calibre: float, dureza: str, tamanho: int):%0A        self.__calibre: float = calibre%0A        self.__dureza : float = dureza%0A        self.__tamanho: int = tamanho%0A%0A%0A    def getCalibre(self):%0A        return self.__calibre%0A    %0A    def getDureza(self):%0A        return self.__hardness%0A    %0A    def getTamanho(self):%0A        return self.__tamanho%0A    %0A    %0Aclass Lapiseira:%0A    %0A    def __init__(self, calibre:int):%0A        self.__calibre: str = calibre%0A        self.__ponta: Grafite %7C None = None%0A%0A    def temGrafite(self):%0A        if self.__ponta != None:%0A            return True\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-26_11-23-52",
+            "content": "@@ -536,488 +536,78 @@\n def \n-__str__(self):%0A        return f%22calibre %7Bself.__calibre%7D, grafite: %7Bself.__ponta%7D%22%0A    %0A    def show(self):%0A        print(self)%0A%0Adef main():%0A    lapiseira = Lapiseira(0)%0A    grafite = Grafite(0, %22%22, 0)%0A%0A    while True:%0A        linha = input()%0A        args: list%5Bstr%5D = linha.split(%22 %22)%0A        print(%22$%22 + linha)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22init%22:%0A            calibre: float = float(args%5B1%5D)%0A            lapiseira = Lapiseira(calibre)%0Amain()\n+temGrafite(self):%0A        if self.__ponta != None:%0A            return True\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-26_11-35-36",
+            "content": "@@ -901,18 +901,16 @@\n         \n-el\n if args%5B\n@@ -1010,15 +1010,14 @@\n alibre)%0A\n-%0A\n main()\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-26_11-36-16",
+            "content": "@@ -1016,68 +1016,8 @@\n re)%0A\n-        elif args%5B0%5D == %22show%22:%0A            lapiseira.show()\n %0Amai\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-26_11-36-57",
+            "content": "@@ -571,17 +571,16 @@\n %22calibre\n-:\n  %7Bself._\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-26_11-37-17",
+            "content": "@@ -526,75 +526,8 @@\n None\n-%0A        if self.__ponta == None:%0A            self.__ponta = %22null%22\n %0A%0A  \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-26_11-39-17",
+            "content": "@@ -733,81 +733,8 @@\n f)%0A%0A\n-    def inserir(self, grafite: Grafite):%0A        self.__ponta = grafite%0A%0A\n def \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-26_11-49-44",
+            "content": "@@ -1218,74 +1218,8 @@\n w()%0A\n-        elif args%5B0%5D == %22insert%22:%0A            lapiseira.inserir()%0A\n main\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-26_11-50-40",
+            "content": "@@ -774,73 +774,8 @@\n e):%0A\n-        if self.__ponta.getCalibre() == grafite.getCalibre()%0A    \n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-26_11-53-06",
+            "content": "@@ -830,17 +830,16 @@\n alibre()\n-:\n %0A       \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-26_11-53-17",
+            "content": "@@ -870,70 +870,8 @@\n fite\n-%0A        else:%0A            print(%22fail: calibre incompativel%22)\n %0A%0Ade\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-26_11-54-01",
+            "content": "@@ -1380,47 +1380,8 @@\n t%22:%0A\n-            grafite: Grafite = args%5B1%5D%0A\n     \n@@ -1406,23 +1406,16 @@\n inserir(\n-grafite\n )%0Amain()\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-26_11-55-59",
+            "content": "@@ -810,21 +810,16 @@\n re() == \n-self.\n grafite.\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_11-57-13",
+            "content": "@@ -792,19 +792,35 @@\n f.__\n-c\n+ponta.getC\n alibre\n+()\n  == \n+self.\n graf\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_12-01-15",
+            "content": "@@ -802,24 +802,37 @@\n e == grafite\n+.getCalibre()\n :%0A          \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_12-03-45",
+            "content": "@@ -381,142 +381,8 @@\n    %0A\n-    def __str__(self):%0A        return f%22%5B%7Bself.__calibre:self.__dureza:self.__tamanho%7D%5D%22%0A    %0A    def show(self):%0A        print(self)%0A\n     \n@@ -810,21 +810,8 @@\n fite\n-.getCalibre()\n :%0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_12-10-38",
+            "content": "@@ -908,50 +908,8 @@\n e):%0A\n-        self.__grafite: Grafite = grafite%0A\n     \n@@ -933,23 +933,16 @@\n ibre == \n-self.__\n grafite.\n@@ -953,16 +953,17 @@\n alibre()\n+:\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-26_12-12-21",
+            "content": "@@ -1002,17 +1002,16 @@\n alibre()\n-:\n %0A       \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-26_12-12-32",
+            "content": "@@ -975,16 +975,23 @@\n ibre == \n+self.__\n grafite.\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-26_12-12-50",
+            "content": "@@ -437,11 +437,9 @@\n ibre\n-%7D:%7B\n+:\n self\n@@ -904,16 +904,58 @@\n afite):%0A\n+        self.__grafite: Grafite = grafite%0A\n         \n@@ -1557,169 +1557,34 @@\n     \n-calibre: float = float(args%5B1%5D)%0A            dureza: str = args%5B2%5D%0A            tamanho: int = int(args%5B3%5D)%0A            grafite = Grafite(calibre, dureza, tamanho)\n+grafite: Grafite = args%5B1%5D\n %0A   \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-26_12-19-26",
+            "content": "@@ -449,19 +449,17 @@\n __dureza\n-%7D:%7B\n+:\n self.__t\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_12-44-05",
+            "content": "@@ -871,139 +871,8 @@\n f)%0A%0A\n-    def temGrafite(self):%0A        if self.__ponta == None:%0A            return False%0A        else:%0A            return True%0A        %0A\n     \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_12-52-36",
+            "content": "@@ -866,24 +866,16 @@\n t(self)%0A\n-        \n %0A    def\n@@ -879,38 +879,23 @@\n def \n-inserir(self, grafite: \n+tem\n Grafite\n+(self\n ):%0A \n@@ -921,9 +921,9 @@\n nta \n-!\n+=\n = No\n@@ -942,40 +942,108 @@\n     \n-print(%22fail: ja existe grafite%22)\n+return False%0A        else:%0A            return True%0A        %0A    def inserir(self, grafite: Grafite):\n %0A   \n@@ -1047,18 +1047,16 @@\n         \n-el\n if self.\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-26_12-57-18",
+            "content": "@@ -923,24 +923,104 @@\n %0A        if \n+self.__ponta != None:%0A            print(%22fail: ja existe grafite%22)%0A        elif \n self.__calib\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-10-26_13-02-14",
+            "content": "@@ -920,45 +920,8 @@\n e):%0A\n-        if self.__ponta == None:%0A    \n     \n@@ -971,36 +971,32 @@\n ():%0A            \n-    \n self.__ponta = g\n@@ -1014,22 +1014,14 @@\n     \n-    \n else:%0A\n-    \n     \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_13-03-17",
+            "content": "@@ -916,16 +916,53 @@\n afite):%0A\n+        if self.__ponta == None:%0A    \n         \n@@ -979,17 +979,17 @@\n calibre \n-!\n+=\n = grafit\n@@ -1020,154 +1020,105 @@\n     \n+  \n-print(%22fail: calibre incompativel%22)%0A        elif self.__ponta != None:%0A            print(%22fail: ja existe grafite%22)%0A        self.__ponta = grafite\n+  self.__ponta = grafite%0A            else:%0A                print(%22fail: calibre incompativel%22)%0A\n %0Adef\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-26_13-08-52",
+            "content": "@@ -1015,17 +1015,16 @@\n tivel%22)%0A\n-%0A\n         \n@@ -1099,26 +1099,8 @@\n e%22)%0A\n-        else:%0A    \n     \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_13-09-45",
+            "content": "@@ -1018,40 +1018,8 @@\n el%22)\n-%0A            self.__ponta = None\n %0A%0A  \n@@ -1096,21 +1096,16 @@\n afite%22)%0A\n-    %0A\n         \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-10-26_13-10-47",
+            "content": "@@ -1132,48 +1132,8 @@\n e%22)%0A\n-            self.__ponta = self.__ponta%0A\n     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-26_13-12-04",
+            "content": "@@ -1027,23 +1027,35 @@\n         \n-return \n+self.__ponta = None\n %0A%0A      \n@@ -1140,22 +1140,43 @@\n         \n-return\n+self.__ponta = self.__ponta\n %0A    %0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-26_13-21-13",
+            "content": "@@ -1027,16 +1027,23 @@\n         \n+return \n %0A%0A      \n@@ -1116,16 +1116,40 @@\n afite%22)%0A\n+            return%0A    %0A\n         \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-26_13-21-50",
+            "content": "@@ -1023,24 +1023,105 @@\n             \n+%0A%0A        elif self.__ponta != None:%0A            print(%22fail: ja existe grafite%22)\n %0A        els\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-26_13-22-12",
+            "content": "@@ -887,218 +887,49 @@\n def \n-temGrafite(self):%0A        if self.__ponta != None:%0A            return True%0A        %0A    def inserir(self, grafite: Grafite):%0A        if self.temGrafite():%0A            print(%22fail: ja existe grafite%22)%0A        el\n+inserir(self, grafite: Grafite):%0A        \n if s\n@@ -1014,16 +1014,28 @@\n ativel%22)\n+%0A           \n  %0A      \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_15-17-38",
+            "content": "@@ -962,47 +962,8 @@\n rue%0A\n-        else:%0A            return False%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-26_15-18-44",
+            "content": "@@ -1126,27 +1126,8 @@\n e%22)%0A\n-            return%0A\n     \n@@ -1228,70 +1228,8 @@\n %22) %0A\n-            grafite = self.__ponta%0A            grafite = None%0A\n     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-26_15-21-05",
+            "content": "@@ -1247,38 +1247,81 @@\n %22) %0A            \n-return\n+grafite = self.__ponta%0A            grafite = None\n %0A        else:%0A \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-26_15-22-22",
+            "content": "@@ -1032,47 +1032,24 @@\n lf, \n-calibre:float, dureza: str, tamanho:int\n+grafite: Grafite\n ):%0A \n@@ -1126,32 +1126,38 @@\n e%22)%0A            \n+return\n %0A        elif se\n@@ -1172,23 +1172,36 @@\n ibre != \n-c\n+grafite.getC\n alibre\n+()\n :%0A      \n@@ -1251,24 +1251,30 @@\n             \n+return\n %0A        els\n@@ -1307,41 +1307,15 @@\n a = \n-G\n+g\n rafite\n-(calibre, dureza, tamanho)\n %0Adef\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-26_15-29-23",
+            "content": "@@ -1989,32 +1989,15 @@\n rir(\n-calibre, dureza, tamanho\n+grafite\n )%0Ama\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-26_15-30-16",
+            "content": "@@ -302,22 +302,24 @@\n  self.__\n-dureza\n+hardness\n %0A    %0A  \n@@ -665,40 +665,16 @@\n one%0A\n-%0A    def __str__(self):%0A\n+ \n        \n- \n if s\n@@ -710,77 +710,54 @@\n     \n-return f%22calibre: %7Bself.__calibre%7D, grafite: \n+self.__ponta = %22\n null%22%0A\n-  \n+%0A\n     \n-  else:%0A    \n+def __str__(self):%0A\n     \n@@ -1032,24 +1032,47 @@\n lf, \n-grafite: Grafite\n+calibre:float, dureza: str, tamanho:int\n ):%0A \n@@ -1193,28 +1193,15 @@\n  != \n-grafite.getC\n+c\n alibre\n-()\n :%0A  \n@@ -1301,23 +1301,49 @@\n ponta = \n-g\n+G\n rafite\n+(calibre, dureza, tamanho)\n %0Adef mai\n@@ -1985,23 +1985,40 @@\n inserir(\n-grafite\n+calibre, dureza, tamanho\n )%0Amain()\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-26_15-46-51",
+            "content": "@@ -1347,110 +1347,8 @@\n fite\n-%0A%0A    def remover(self):%0A        if self.__ponta != None:%0A            self.__ponta = None%0A            \n %0Adef\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-26_15-53-57",
+            "content": "@@ -1360,32 +1360,69 @@\n  remover(self):%0A\n+        if self.__ponta != None:%0A    \n         self.__p\n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-26_15-55-39",
+            "content": "@@ -2072,74 +2072,8 @@\n te)%0A\n-        elif args%5B0%5D == %22remove%22:%0A            lapiseira.remover()%0A\n main\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-26_15-56-47",
+            "content": "@@ -516,308 +516,8 @@\n elf)\n-%0A%0A    def gastoPorFolha(self):%0A        if self.__dureza == %22HB%22:%0A            self.__tamanho -= 1%0A        elif self.__dureza == %222B%22:%0A            self.__tamanho -= 2%0A        elif self.__dureza == %224B%22:%0A            self.__tamanho -= 4%0A        elif self.__dureza == %226B%22:%0A            self.__tamanho -= 6\n %0A   \n@@ -1400,347 +1400,8 @@\n one%0A\n-    %0A    def escrever(self):%0A        self.__ponta.gastoPorFolha()%0A        if self.temGrafite() == False:%0A            print(%22fail: nao existe grafite%22)%0A        if self.__ponta.getTamanho() == 10:     %0A            print(%22fail: tamanho insuficiente%22)%0A        elif self.__ponta.getTamanho() %3C 10:%0A            print(%22fail: folha incompleta%22)%0A%0A%0A\n     \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_16-24-33",
+            "content": "@@ -1847,34 +1847,32 @@\n afite%22)%0A        \n-el\n if self.__ponta.\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-26_16-24-56",
+            "content": "@@ -1762,17 +1762,16 @@\n Folha()%0A\n-%0A\n         \n@@ -2779,72 +2779,8 @@\n r()%0A\n-        elif args%5B0%5D == %22write%22:%0A            lapiseira.escrever%0A\n main\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-26_16-26-45",
+            "content": "@@ -2839,17 +2839,15 @@\n escrever\n-()\n %0Amain()\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_16-26-58",
+            "content": "@@ -1717,32 +1717,70 @@\n escrever(self):%0A\n+        self.__ponta.gastoPorFolha()%0A%0A\n         if self.\n@@ -1848,25 +1848,24 @@\n afite%22)%0A\n-%0A\n         \n self.__p\n@@ -1860,46 +1860,10 @@\n     \n-s\n el\n-f.__ponta.gastoPorFolha()%0A%0A        \n if s\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_16-31-35",
+            "content": "@@ -1806,32 +1806,33 @@\n e grafite%22)%0A\n+%0A\n         \n elif self.__\n@@ -1811,34 +1811,70 @@\n fite%22)%0A%0A        \n+s\n el\n+f.__ponta.gastoPorFolha()%0A%0A        \n if self.__ponta.\n@@ -2040,45 +2040,8 @@\n %22)%0A%0A\n-        self.__ponta.gastoPorFolha()%0A\n %0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_16-34-30",
+            "content": "@@ -1849,17 +1849,17 @@\n manho() \n-%3C\n+=\n = 10:   \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-26_16-35-54",
+            "content": "@@ -1909,36 +1909,113 @@\n iente%22)%0A        \n-    \n+elif self.__ponta.getTamanho() %3C 10:%0A            print(%22fail: folha incompleta%22)%0A\n %0A        self.__\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-26_16-38-20",
+            "content": "@@ -1802,32 +1802,182 @@\n xiste grafite%22)%0A\n+        elif self.__ponta.getTamanho() %3C= 10:     %0A            print(%22fail: tamanho insuficiente%22)%0A            %0A        self.__ponta.gastoPorFolha()%0A%0A\n             %0Adef\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-26_16-42-18",
+            "content": "@@ -1814,94 +1814,8 @@\n e%22)%0A\n-        elif self.__ponta.getTamanho() %3E 10:%0A            self.__ponta.gastoPorFolha()%0A\n     \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-26_16-44-55",
+            "content": "@@ -1810,32 +1810,109 @@\n afite%22)%0A        \n+elif self.__ponta.getTamanho() %3E 10:%0A            self.__ponta.gastoPorFolha()\n %0A            %0Ade\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-26_16-45-34",
+            "content": "@@ -1822,85 +1822,8 @@\n     \n-elif self.__ponta.getTamanho() %3E 10:%0A            self.__ponta.gastoPorFolha()\n %0A   \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-26_16-45-44",
+            "content": "@@ -1900,102 +1900,8 @@\n a()%0A\n-        elif self.__ponta.getTamanho() %3C= 10:%0A            print(%22fail: tamanho insuficiente%22)%0A\n     \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-26_16-48-02",
+            "content": "@@ -817,73 +817,8 @@\n = 6%0A\n-        if self.__tamanho %3C 10:%0A            self.__ tamanho = 10%0A\n     \n@@ -2006,22 +2006,8 @@\n     \n-%0A%0A            \n %0Adef\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-26_16-52-52",
+            "content": "@@ -856,32 +856,33 @@\n          self.__\n+ \n tamanho = 10%0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_16-53-03",
+            "content": "@@ -881,52 +881,8 @@\n  10%0A\n-            print(%22fail: folha incompleta%22)%0A\n     \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_16-59-37",
+            "content": "class Grafite:\n    def __init__(self, calibre: float, dureza: str, tamanho: int):\n        self.__calibre: float = calibre\n        self.__dureza : float = dureza\n        self.__tamanho: int = tamanho\n\n\n    def getCalibre(self):\n        return self.__calibre\n    \n    def getDureza(self):\n        return self.__dureza\n    \n    def getTamanho(self):\n        return self.__tamanho\n    \n    def __str__(self):\n        return f\"[{self.__calibre}:{self.__dureza}:{self.__tamanho}]\"\n    \n    def show(self):\n        print(self)\n\n    def gastoPorFolha(self):\n        if self.__dureza == \"HB\":\n            self.__tamanho -= 1\n        elif self.__dureza == \"2B\":\n            self.__tamanho -= 2\n        elif self.__dureza == \"4B\":\n            self.__tamanho -= 4\n        elif self.__dureza == \"6B\":\n            self.__tamanho -= 6\n        if self.__tamanho < 10:\n            self.__tamanho = 10\n            print(\"fail: folha incompleta\")\n    \nclass Lapiseira:\n    \n    def __init__(self, calibre:int):\n        self.__calibre: str = calibre\n        self.__ponta: Grafite | None = None\n\n    def __str__(self):\n        if self.__ponta == None:\n            return f\"calibre: {self.__calibre}, grafite: null\"\n        else:\n            return f\"calibre: {self.__calibre}, grafite: {self.__ponta}\"\n    \n    def show(self):\n        print(self)\n        \n    def temGrafite(self):\n        if self.__ponta != None:\n            return True\n        else:\n            return False\n        \n    def inserir(self, grafite: Grafite):\n        if self.temGrafite():\n            print(\"fail: ja existe grafite\")\n            \n        elif self.__calibre != grafite.getCalibre():\n            print(\"fail: calibre incompativel\") \n            \n        else:\n            self.__ponta = grafite\n\n    def remover(self):\n        self.__ponta = None\n    \n    def escrever(self):\n        if self.temGrafite() == False:\n            print(\"fail: nao existe grafite\")\n        elif self.__ponta.getTamanho() > 10:\n            self.__ponta.gastoPorFolha()\n        elif self.__ponta.getTamanho() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            \n\n            \ndef main():\n    lapiseira = Lapiseira(0)\n    grafite = Grafite(0, \"\", 0)\n\n    while True:\n        linha = input()\n        args: list[str] = linha.split(\" \")\n        print(\"$\" + linha)\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            calibre: float = float(args[1])\n            lapiseira = Lapiseira(calibre)\n        elif args[0] == \"show\":\n            lapiseira.show()\n        elif args[0] == \"insert\":\n            calibre: float = float(args[1])\n            dureza: str = args[2]\n            tamanho: int = int(args[3])\n            grafite = Grafite(calibre, dureza, tamanho)\n            lapiseira.inserir(grafite)\n        elif args[0] == \"remove\":\n            lapiseira.remover()\n        elif args[0] == \"write\":\n            lapiseira.escrever()\nmain()",
+            "lines": "106"
+        }
+    ]
+}

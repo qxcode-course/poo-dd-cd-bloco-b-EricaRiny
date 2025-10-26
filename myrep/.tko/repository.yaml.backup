@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\erina\poo-dd-cd-bloco-b-EricaRiny\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-25 17:00:34'
+  cache_timestamp: '2025-10-26 15:47:09'
   filters:
   - acesso
   - simples
@@ -23,6 +23,8 @@ tasks:
   poo@relogio: '{rate:100, iagen:pesquisei_como_deixar_2_digitos, alone:9, study:120}'
   poo@motoca: '{rate:100, iagen:pesquisei_como_eu_poderia_repetir_o_E_na_buzina, alone:9,
     study:150}'
+  poo@grafite: '{rate:100, iagen:deu_alguns_erros_na_ordem_dos_if_e_descobri_por_maio_do_chat,
+    alone:8, study:180}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +32,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@notebook
+selected: poo@grafite
