@@ -1,0 +1,254 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_15-02-11",
+            "content": "@@ -1,710 +0,0 @@\n-class Pessoa:%0A    def __init__(self, nome:str, idade:int):%0A        self.__nome:str = nome%0A        self.__idade:str = idade%0A    %0Aclass Motoca:%0A%0A    def __init__(self):%0A        self.potencia:int = 1%0A        self.tempo:int = 0%0A        self.pessoa: Pessoa %7C None = None%0A%0A    def __init%0A%0A    def subir(self):%0A%0A    def descer(self):%0A    %0A    def comprar(self):%0A%0A    def dirigir(self, tempo:int):%0A    %0A    def buzinar(self):%0A%0Adef main():%0A%0A    pessoa = Pessoa(%22%22, 0)%0A    motoca = Motoca()%0A%0A    while True:%0A        linha = input()%0A        args: list%5Bstr%5D = linha.split(%22 %22)%0A%0A        print($ + linha)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            motoca.show() %0A%0Amain()%0A    \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_15-19-23",
+            "content": "@@ -260,16 +260,31 @@\n = None%0A%0A\n+    def __init%0A\n %0A    def\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-25_15-20-02",
+            "content": "@@ -260,16 +260,151 @@\n = None%0A%0A\n+%0A    def subir(self):%0A%0A    def descer(self):%0A    %0A    def comprar(self):%0A%0A    def dirigir(self, tempo:int):%0A    %0A    def buzinar(self):\n %0A%0Adef ma\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-25_15-20-20",
+            "content": "@@ -427,11 +427,9 @@\n int(\n-%22$%22\n+$\n  + l\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-25_15-20-32",
+            "content": "@@ -264,151 +264,8 @@\n ne%0A%0A\n-    def __str__(self):%0A        return f%22power:%7Bself.potencia%7D, time:%7Bself.tempo%7D, person:%7Bself.pessoa%7D%22%0A    def show(self):%0A        print(self)\n %0A%0Ade\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-25_15-46-02",
+            "content": "@@ -264,70 +264,8 @@\n ne%0A%0A\n-        if self.pessoa == None:%0A            return %22(empty)%22%0A%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_15-49-04",
+            "content": "@@ -253,16 +253,73 @@\n %7C None =\n+ None%0A%0A        if self.pessoa == None:%0A            return\n  %22(empty\n@@ -527,18 +527,16 @@\n  Motoca(\n-%22%22\n )%0A%0A    w\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-25_15-53-18",
+            "content": "@@ -470,16 +470,18 @@\n  Motoca(\n+%22%22\n )%0A%0A    w\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_15-53-47",
+            "content": "@@ -119,121 +119,8 @@\n dade\n-%0A%0A    def getNome(self):%0A        return self.__nome%0A    %0A    def getIdade(self):%0A        return self.__idade%0A    \n %0A   \n@@ -173,18 +173,16 @@\n    self.\n-__\n potencia\n@@ -203,18 +203,16 @@\n    self.\n-__\n tempo:in\n@@ -226,26 +226,24 @@\n        self.\n-__\n pessoa: Pess\n@@ -414,246 +414,8 @@\n f)%0A%0A\n-    %0A    def subir(self, nome:str, idade:int):%0A        self.__pessoa.getNome = nome%0A        self.__pessoa.getIdade = idade%0A%0A    def descer(self):%0A    %0A    def comprar(self):%0A%0A    def dirigir(self, tempo:int):%0A    %0A    def buzinar(self):%0A%0A\n def \n@@ -694,147 +694,8 @@\n w() \n-%0A        elif arfs%5B0%5D == %22enter%22:%0A            nome:str = args%5B1%5D%0A            idade:int = int(args%5B2%5D)%0A            motoca.subir(nome, idade)\n %0A%0Ama\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_16-02-14",
+            "content": "@@ -655,16 +655,126 @@\n dade%0A%0A  \n+  def descer(self):%0A    %0A    def comprar(self):%0A%0A    def dirigir(self, tempo:int):%0A    %0A    def buzinar(self):\n %0A%0Adef ma\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-25_16-02-27",
+            "content": "@@ -945,33 +945,33 @@\n %0A        elif ar\n-g\n+f\n s%5B0%5D == %22enter%22:\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_16-03-04",
+            "content": "@@ -537,16 +537,130 @@\n     %0A   \n+ def subir(self, nome:str, idade:int):%0A        self.__pessoa.getNome = nome%0A        self.__pessoa.getIdade = idade\n %0A%0A  %0A%0Ade\n@@ -945,16 +945,147 @@\n %0A       \n+ elif args%5B0%5D == %22enter%22:%0A            nome:str = args%5B1%5D%0A            idade:int = int(args%5B2%5D)%0A            motoca.subir(nome, idade)\n %0A%0Amain()\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_16-05-07",
+            "content": "@@ -432,26 +432,24 @@\n power:%7Bself.\n-__\n potencia%7D, t\n@@ -454,26 +454,24 @@\n  time:%7Bself.\n-__\n tempo%7D, pers\n@@ -475,26 +475,24 @@\n erson:%7Bself.\n-__\n pessoa%7D%22%0A   \n@@ -537,122 +537,8 @@\n     \n-def subir(self, nome:str, idade:int):%0A        self.__pessoa.getIdade = idade%0A        self.__pessoa.getNome = nome%0A\n %0A   \n@@ -828,147 +828,8 @@\n () %0A\n-        elif args%5B0%5D == %22enter%22:%0A            nome:str = args%5B1%5D%0A            idade:int = int(args%5B2%5D)%0A            motoca.subir(nome, idade)%0A\n     \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-25_16-09-19",
+            "content": "@@ -373,20 +373,25 @@\n  None = \n-None\n+%22(empty)%22\n %0A%0A    de\n@@ -419,135 +419,14 @@\n     \n-if self.__pessoa == None:%0A            f%22power:%7Bself.__potencia%7D, time:%7Bself.__tempo%7D, person:(empty)%22%0A        else:%0A           \n+return\n  f%22p\n@@ -589,36 +589,84 @@\n     \n-pessoa = Pessoa(nome, idade)\n+self.__pessoa.getIdade = idade%0A        self.__pessoa.getNome = nome%0A%0A   %0A%0A  \n %0A%0Ade\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-25_16-27-53",
+            "content": "@@ -440,39 +440,32 @@\n ne:%0A            \n-return \n f%22power:%7Bself.__\n@@ -538,23 +538,16 @@\n         \n-return \n f%22power:\n@@ -611,43 +611,8 @@\n ssoa\n-.getNome()%7D:%7Bself.__pessoa.getIdade\n %7D%22%0A \n@@ -697,31 +697,24 @@\n t):%0A        \n-self.__\n pessoa = Pes\n@@ -1150,16 +1150,17 @@\n , idade)\n+%0A\n        %0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-25_16-38-00",
+            "content": "@@ -656,18 +656,16 @@\n getIdade\n-()\n %7D%22%0A    d\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-25_16-38-42",
+            "content": "@@ -607,17 +607,16 @@\n  person:\n-(\n %7Bself.__\n@@ -659,17 +659,16 @@\n Idade()%7D\n-)\n %22%0A    de\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-25_16-39-18",
+            "content": "@@ -750,103 +750,8 @@\n t):%0A\n-        if self.__pessoa != None:%0A            print(%22fail: busy motorcycle%22)%0A        else:%0A    \n     \n@@ -793,22 +793,9 @@\n ade)\n-              \n+%0A\n %0Adef\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-25_16-45-29",
+            "content": "@@ -233,130 +233,8 @@\n    %0A\n-    def __str__(self):%0A        return f%22(%7Bself.__nome%7D:%7Bself.__idade%7D)%22%0A    %0A    def show(self):%0A        print(self)%0A    %0A\n     \n@@ -573,14 +573,100 @@\n .__p\n-essoa%7D\n+otencia%7D, time:%7Bself.__tempo%7D, person:(%7Bself.__pessoa.getNome()%7D:%7Bself.__pessoa.getIdade()%7D)\n %22%0A  \n@@ -1324,40 +1324,8 @@\n e)  \n-%0A        elif args%5B0%5D == %22init%22:\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-25_16-53-26",
+            "content": "@@ -1365,16 +1365,44 @@\n         \n+elif args%5B0%5D == %22init%22:     \n %0A%0Amain()\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-53-47",
+            "content": "@@ -694,55 +694,8 @@\n f.__\n-potencia%7D, time:%7Bself.__tempo%7D, person:%7Bself.__\n pess\n@@ -1369,36 +1369,8 @@\n     \n-elif args%5B0%5D == %22init%22:     \n %0A%0Ama\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-54-56",
+            "content": "@@ -1406,24 +1406,49 @@\n de)  %0A      \n+  elif args%5B0%5D == %22init%22:\n      %0A%0Amain(\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-55-14",
+            "content": "@@ -396,22 +396,8 @@\n self\n-, potencia:int\n ):%0A \n@@ -425,24 +425,17 @@\n a:int = \n-potencia\n+1\n %0A       \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_16-56-50",
+            "content": "@@ -1063,17 +1063,16 @@\n  Motoca(\n-0\n )%0A%0A    w\n@@ -1426,118 +1426,10 @@\n ade)\n-%0A\n   \n-      elif args%5B0%5D == %22init%22:%0A            potencia:int = int(args%5B1%5D)%0A            motoca = Motoca(potencia)\n %0A   \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-25_17-00-42",
+            "content": "@@ -439,17 +439,24 @@\n a:int = \n-1\n+potencia\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_17-01-10",
+            "content": "@@ -439,24 +439,17 @@\n a:int = \n-potencia\n+1\n %0A       \n@@ -1056,17 +1056,17 @@\n  Motoca(\n-1\n+0\n )%0A%0A    w\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_17-01-40",
+            "content": "@@ -994,109 +994,8 @@\n e)  \n-%0A%0A    def sair(self):%0A        if self.__pessoa != None:%0A            self.__pessoa = None%0A            \n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-25_17-04-54",
+            "content": "@@ -1079,16 +1079,40 @@\n  = None%0A\n+                        \n %0Adef mai\n@@ -1647,58 +1647,11 @@\n     \n-elif args%5B0%5D == %22leave%22:%0A            motoca.sair()\n+   \n %0A%0Ama\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-25_17-05-38",
+            "content": "@@ -1062,83 +1062,28 @@\n     \n-aux = self.__pessoa%0A            self.__pessoa = None%0A            return aux\n+self.__pessoa = None\n %0A%0Ade\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-25_17-09-14",
+            "content": "@@ -1127,18 +1127,18 @@\n     \n-print(\n+return \n aux\n-)\n %0A%0Ade\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_17-10-01",
+            "content": "@@ -269,16 +269,17 @@\n eturn f%22\n+(\n %7Bself.__\n@@ -298,16 +298,17 @@\n __idade%7D\n+)\n %22%0A    %0A \n@@ -750,17 +750,16 @@\n  person:\n-(\n %7Bself.__\n@@ -765,17 +765,16 @@\n _pessoa%7D\n-)\n %22%0A    de\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_17-10-47",
+            "content": "@@ -1012,17 +1012,16 @@\n (self):%0A\n-%0A\n         \n@@ -1137,66 +1137,8 @@\n aux)\n-%0A        else:%0A            print(%22fail: empty motorcycle%22)\n %0A%0Ade\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-25_17-11-38",
+            "content": "@@ -1198,73 +1198,8 @@\n %22)%0A%0A\n-    def comprar(self, valor:int):%0A        self.__tempo += valor%0A%0A\n def \n@@ -1787,110 +1787,8 @@\n ir()\n-%0A        elif args%5B0%5D == %22buy%22:%0A            valor:int = int(args%5B0%5D)%0A            motoca.comprar(valor)\n %0A%0Ama\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-25_17-13-54",
+            "content": "@@ -1905,33 +1905,33 @@\n :int = int(args%5B\n-1\n+0\n %5D)%0A            m\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-25_17-14-29",
+            "content": "@@ -1263,118 +1263,8 @@\n or%0A%0A\n-    def dirigir(self, valor:int):%0A        if valor %3E self.__tempo:%0A            print(%22fail: buy time first%22)%0A%0A\n def \n@@ -1954,112 +1954,8 @@\n lor)\n-%0A        elif args%5B0%5D == %22drive%22:%0A            valor:int = int(args%5B1%5D)%0A            motoca.dirigir(valor)\n %0A%0Ama\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-25_17-18-55",
+            "content": "@@ -1371,86 +1371,8 @@\n st%22)\n-%0A        elif self.__pessoa == None:%0A            print(fail: empty motorcycle)\n %0A%0Ade\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-25_17-20-05",
+            "content": "@@ -1414,33 +1414,32 @@\n           print(\n-%22\n fail: empty moto\n@@ -1444,17 +1444,16 @@\n torcycle\n-%22\n )%0A%0Adef m\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-25_17-20-24",
+            "content": "@@ -1451,56 +1451,8 @@\n le%22)\n-%0A        else:%0A            self.__tempo -= valor\n %0A%0Ade\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-25_17-22-14",
+            "content": "@@ -1308,93 +1308,8 @@\n  if \n-self.__pessoa.getIdade %3E 10:%0A            print(%22fail: to old to drive%22)%0A        elif \n valo\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_17-40-31",
+            "content": "@@ -1326,18 +1326,16 @@\n getIdade\n-()\n  %3E 10:%0A \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-25_17-42-24",
+            "content": "@@ -1304,16 +1304,103 @@\n      if \n+self.__pessoa.getIdade() %3E 10:%0A            print(%22fail: to old to drive%22)%0A        elif \n valor %3E \n@@ -1539,95 +1539,8 @@\n e%22)%0A\n-        elif self.__pessoa.getIdade() %3E 10:%0A            print(%22fail: to old to drive%22)%0A\n     \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-25_17-43-30",
+            "content": "@@ -1519,17 +1519,16 @@\n fail: to\n-o\n  old to \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-25_17-43-44",
+            "content": "@@ -1540,169 +1540,8 @@\n e%22)%0A\n-        elif self.__tempo %3C valor:%0A            valor = self.__tempo%0A            self.__tempo = 0%0A            print(f%22fail: time finished after %7Bvalor%7D minutes%22)%0A\n     \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-25_17-48-35",
+            "content": "@@ -1440,32 +1440,120 @@\n ty motorcycle%22)%0A\n+        elif self.__pessoa.getIdade() %3E 10:%0A            print(%22fail: too old to drive%22)%0A\n         elif sel\n@@ -1701,96 +1701,8 @@\n s%22)%0A\n-        elif self.__pessoa.getIdade() %3E 10:%0A            print(%22fail: too old to drive%22)%0A\n     \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-25_17-49-18",
+            "content": "@@ -1295,32 +1295,40 @@\n int):%0A        if\n+ valor %3E\n  self.__tempo ==\n@@ -1328,13 +1328,8 @@\n empo\n- == 0\n :%0A  \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-25_17-50-22",
+            "content": "@@ -1745,110 +1745,8 @@\n alor\n-%0A    %0A    def buzina(self):%0A        buzina = %22p%22 + (%22e%22 * self.__potencia) + %22m%22%0A        return buzina\n %0A%0Ade\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-25_17-56-21",
+            "content": "@@ -2644,68 +2644,8 @@\n lor)\n-%0A        elif args%5B0%5D == %22honk%22:%0A            motoca.buzina()\n %0A%0Ama\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-25_17-59-12",
+            "content": "@@ -1834,21 +1834,21 @@\n     \n-print(\n+return \n buzina\n-)\n %0A%0Ade\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-25_17-59-59",
+            "content": "@@ -1787,17 +1787,17 @@\n zina = %22\n-P\n+p\n %22 + (%22e%22\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-25_18-00-31",
+            "content": "class Pessoa:\n    def __init__(self, nome:str, idade:int):\n        self.__nome:str = nome\n        self.__idade:str = idade\n\n    def getNome(self):\n        return self.__nome\n    \n    def getIdade(self):\n        return self.__idade\n    \n    def __str__(self):\n        return f\"{self.__nome}:{self.__idade}\"\n    \n    def show(self):\n        print(self)\n    \n    \nclass Motoca:\n\n    def __init__(self, potencia:int):\n        self.__potencia:int = potencia\n        self.__tempo:int = 0\n        self.__pessoa: Pessoa | None = None\n\n    def __str__(self):\n        if self.__pessoa == None:\n            return f\"power:{self.__potencia}, time:{self.__tempo}, person:(empty)\"\n        else:\n            return f\"power:{self.__potencia}, time:{self.__tempo}, person:({self.__pessoa})\"\n    def show(self):\n        print(self)\n\n    def subir(self, nome:str, idade:int):\n        if self.__pessoa != None:\n            print(\"fail: busy motorcycle\")\n        else:\n            self.__pessoa = Pessoa(nome, idade)  \n\n    def sair(self):\n\n        if self.__pessoa != None:\n            aux = self.__pessoa\n            self.__pessoa = None\n            print(aux)\n        else:\n            print(\"fail: empty motorcycle\")\n\n    def comprar(self, valor:int):\n        self.__tempo += valor\n\n    def dirigir(self, valor:int):\n        if self.__tempo == 0:\n            print(\"fail: buy time first\")\n        elif self.__pessoa == None:\n            print(\"fail: empty motorcycle\")\n        elif self.__tempo < valor:\n            valor = self.__tempo\n            self.__tempo = 0\n            print(f\"fail: time finished after {valor} minutes\")\n        elif self.__pessoa.getIdade() > 10:\n            print(\"fail: too old to drive\")\n        else:\n            self.__tempo -= valor\n    \n    def buzina(self):\n        buzina = \"P\" + (\"e\" * self.__potencia) + \"m\"\n        print(buzina)\n\ndef main():\n\n    pessoa = Pessoa(\"\", 0)\n    motoca = Motoca(1)\n\n    while True:\n        linha = input()\n        args: list[str] = linha.split(\" \")\n\n        print(\"$\" + linha)\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            motoca.show() \n        elif args[0] == \"enter\":\n            nome:str = args[1]\n            idade:int = int(args[2])\n            motoca.subir(nome, idade)\n        elif args[0] == \"init\":\n            potencia:int = int(args[1])\n            motoca = Motoca(potencia)\n        elif args[0] == \"leave\":\n            motoca.sair()\n        elif args[0] == \"buy\":\n            valor:int = int(args[1])\n            motoca.comprar(valor)\n        elif args[0] == \"drive\":\n            valor:int = int(args[1])\n            motoca.dirigir(valor)\n        elif args[0] == \"honk\":\n            motoca.buzina()\n\nmain()\n    ",
+            "lines": "104"
+        }
+    ]
+}

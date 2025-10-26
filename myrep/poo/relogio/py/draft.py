@@ -1,18 +1,11 @@
 class Relogio:
     def __init__(self, hora:int, minuto:int, segundo:int):
-        self.__hora:int = hora
-        self.__minuto:int = minuto
-        self.__segundo:int = segundo
-        
-        if self.__hora > 23:
-            print("fail: hora invalida")
-            self.__hora = 0
-        if self.__minuto > 59:
-            print("fail: minuto invalido")
-            self.__minuto = 0
-        if self.__segundo > 59:
-            print("fail: segundo invalido")
-            self.__segundo = 0
+        self.__hora:int = 0
+        self.__minuto:int = 0
+        self.__segundo:int = 0
+        self.setHora(hora)
+        self.setMin(minuto)
+        self.setSeg(segundo)
 
     def getHora(self):
         return self.__hora
@@ -56,10 +49,7 @@ class Relogio:
         if self.__hora > 23:
             self.__hora = 0
 
-       
-            
-
-
+    
 def main():
 
     relogio = Relogio(0, 0, 0)
@@ -71,10 +61,10 @@ def main():
         if arg[0] == "end":
             break
         elif arg[0] == "init":
-            valor1:int = int(arg[1])
-            valor2:int = int(arg[2])
-            valor3:int = int(arg[3])
-            relogio.__init__(valor1, valor2, valor3)
+           valor1:int = int(arg[1])
+           valor2:int = int(arg[2])
+           valor3:int = int(arg[3])
+           relogio = Relogio(valor1, valor2, valor3)
         elif arg[0] == "show":
             relogio.show()
         elif arg[0] == "set":
