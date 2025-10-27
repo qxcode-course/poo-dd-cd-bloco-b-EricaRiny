@@ -25,6 +25,7 @@ tasks:
     study:150}'
   poo@grafite: '{rate:100, iagen:deu_alguns_erros_na_ordem_dos_if_e_descobri_por_maio_do_chat,
     alone:8, study:180}'
+  poo@motouber: '{rate:100, alone:10, study:90}'
 flags:
   quests: 0
   tracks: 0
@@ -32,4 +33,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motouber
+selected: poo@notebook

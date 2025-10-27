@@ -103,3 +103,8 @@
 2025-10-26 22:00:50, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:77
 2025-10-26 22:10:02, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:82
 2025-10-26 22:15:00, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:85
+2025-10-26 22:21:06, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 22:21:08, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 22:21:10, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100
+2025-10-26 22:21:11, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 22:22:51, SELF, v:1, k:poo@motouber, rate:100, alone:10, study:90
